@@ -2,7 +2,7 @@
 
 ### Пишем приложение. Часть 2
 
-1. Новая функция _start_, в которую мы передаем наши переменные _money_, _time_
+1. Новая функция **start**, в которую мы передаем наши переменные _money_, _time_
 
 > function start() {
 > <br> &nbsp;&nbsp;&nbsp;&nbsp; money = +prompt('Ваш бюджет на месяц?', '');
@@ -10,8 +10,15 @@
 > <br> }
 > <br> start();
 
-2. Делаем проверку для porompt'а _(внутри function start()...)_
+2. Делаем проверку для **porompt'а** _(внутри function start()...)_
 
 > while(isNaN(money) || money == '' || money == null) {
 > <br> &nbsp;&nbsp;&nbsp;&nbsp; money = +prompt('Ваш бюджет на месяц?', '');
 > <br> }
+
+3. Перемещаем [наш цикл]() в новую функцию
+
+> function chooseExpenses() {
+> ### &nbsp;&nbsp;&nbsp;&nbsp; Наш цикл
+> }
+> <br> chooseExpenses();

@@ -16,9 +16,15 @@
 > <br> &nbsp;&nbsp;&nbsp;&nbsp; money = +prompt('Ваш бюджет на месяц?', '');
 > <br> }
 
-3. Перемещаем [наш цикл]() в новую функцию
+3. Перемещаем [**наш цикл**](https://github.com/Sadovoy-Danil/Task_2) в новую функцию
 
 > function chooseExpenses() {
 > ### &nbsp;&nbsp;&nbsp;&nbsp; Наш цикл
 > }
 > <br> chooseExpenses();
+
+4. Округление переменной _**moneyPerDay**_ до целого числа
+
+> **БЫЛО: appData.moneyPerDay = appData.budget / 30;**
+
+> **СТАЛО: appData.moneyPerDay = (appData.budget / 30).toFixed();**

@@ -71,3 +71,20 @@ _**Дополнительное задание**_
 
 <hr>
 
+- **Создать функцию для определения необязательных расходов (chooseOptExpenses): Необходимо 3 раза спросить у пользователя “Статья необязательных расходов?”**
+
+> _**Записать ответы в объект optionalExpenses в формате Номер - Ответ.**_
+
+> function chooseOptExpenses() {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp; for (let i = 0; i < 3; i++) {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; let a = prompt('Введите обязательную статью расходов в этом месяце', '');
+>    
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( (typeof(a)) === 'string' && (typeof(a)) != null &&  a != '' &&  a.length < 50) {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; appData.optionalExpenses[i] = a;
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i--;
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+> <br> &nbsp;&nbsp;&nbsp;&nbsp; }
+> <br> }
+> <br> chooseOptExpenses();
+

@@ -10,11 +10,15 @@
 > <br> }
 > <br> start();
 
+<hr>
+
 2. Делаем проверку для **porompt'а** _(внутри function start()...)_
 
 > while(isNaN(money) || money == '' || money == null) {
 > <br> &nbsp;&nbsp;&nbsp;&nbsp; money = +prompt('Ваш бюджет на месяц?', '');
 > <br> }
+
+<hr>
 
 3. Перемещаем [**наш цикл**](https://github.com/Sadovoy-Danil/Task_2) в новую функцию
 
@@ -23,11 +27,15 @@
 > }
 > <br> chooseExpenses();
 
+<hr>
+
 4. Округление переменной _**moneyPerDay**_ до целого числа
 
 > **БЫЛО: appData.moneyPerDay = appData.budget / 30;**
 
 > **СТАЛО: appData.moneyPerDay = (appData.budget / 30).toFixed();**
+
+<hr>
 
 5. Функция для расчета прибыли с депозита за месяц **checkSavings**
 
@@ -43,17 +51,23 @@
 > <br>
 > <br>checkSavings();
 
+<hr>
+
 _**Дополнительное задание**_
 
 - **Оформить расчет дневного бюджета  и вывод на экран этого значения как одну функцию (detectDayBudget)**
 
 > function detectDayBudget() {
-> ### [Код](https://github.com/Sadovoy-Danil/Task_2)
+> ### &nbsp;&nbsp;&nbsp;&nbsp; [Код](https://github.com/Sadovoy-Danil/Task_2)
 > }
+
+<hr>
 
 - **Оформить блок кода с расчетом уровня достатка как отдельную функцию (detectLevel)**
 
 > function detectLevel() {
-> ### [Код](https://github.com/Sadovoy-Danil/Task_2)
+> ### &nbsp;&nbsp;&nbsp;&nbsp; [Код](https://github.com/Sadovoy-Danil/Task_2)
 > }
+
+<hr>
 

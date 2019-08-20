@@ -42,3 +42,18 @@
 > <br>}
 > <br>
 > <br>checkSavings();
+
+_**Дополнительное задание**_
+
+- **Оформить расчет дневного бюджета  и вывод на экран этого значения как одну функцию (detectDayBudget)**
+
+> function detectDayBudget() {
+> ### [Код](https://github.com/Sadovoy-Danil/Task_2)
+> }
+
+- **Оформить блок кода с расчетом уровня достатка как отдельную функцию (detectLevel)**
+
+> function detectLevel() {
+> ### [Код](https://github.com/Sadovoy-Danil/Task_2)
+> }
+

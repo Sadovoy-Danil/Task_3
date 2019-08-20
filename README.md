@@ -28,3 +28,17 @@
 > **БЫЛО: appData.moneyPerDay = appData.budget / 30;**
 
 > **СТАЛО: appData.moneyPerDay = (appData.budget / 30).toFixed();**
+
+5. Функция для расчета прибыли с депозита за месяц **checkSavings**
+
+> function checkSavings() {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp; if (appData.savings == true) {
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; let save = +prompt("Какова сумма накоплений?", ""),
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; percent = +prompt("Под какой процент?", "");
+> <br>
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; appData.monthIncome = save / 100 / 12 * percent;
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert("Доход в месяц с вашего депозита: " + appData.monthIncome);
+> <br> &nbsp;&nbsp;&nbsp;&nbsp;}
+> <br>}
+> <br>
+> <br>checkSavings();
